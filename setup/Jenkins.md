@@ -38,6 +38,17 @@ git config --global user.email "hoge@hoge.com"
 git config --global user.name "hoge"
 ```
 
+## Hub Install(GitHub tool)
+```bash
+cd /tmp
+git clone https://github.com/github/hub.git
+cd hub/
+./script/build
+cp hub /usr/local/bin/
+```
+
+hub pull-request -b master -h test -a cobot-jenkins
+
 ## Nginx Install
 ### For Ubuntu
 ```bash
