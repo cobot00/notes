@@ -21,15 +21,37 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
+### For Windows
+1. Download zip from [jenkins](https://jenkins.io/) (use 2.32.1 in this case).
+2. execute `jenkins.msi` after expand zip.
+
 ## Jenkins Theme Change
 http://jenkins-contrib-themes.github.io/jenkins-material-theme/
 ```
 https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-cyan.css
 ```
 
+## Jenkins Theme
+install below plugin.
+```
+Simple Theme Plugin
+```
+
+### jenkins-material-theme
+
+#### 1. through network
+[jenkins-material-theme](http://afonsof.com/jenkins-material-theme/)
+```
+https://jenkins-contrib-themes.github.io/jenkins-material-theme/dist/material-cyan.css
+```
+
+#### 2. arranged in local
+2-1. dowload `material-light.css`  
+2-2. `material-light.css` is localted in `[JENKINS_HOME]/userContent`  
+
 ## Jenkins SSH Key
 ```bash
-sudo su - jenins
+sudo su - jenkins
 
 ssh-keygen -t rsa -C cobotjenkins@gmail.com
 cat /var/lib/jenkins/.ssh/id_rsa.pub
