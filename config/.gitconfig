@@ -1,0 +1,17 @@
+[user]
+	name = cobot00
+	email = kobori75@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+    co = checkout
+    st = status
+    br = branch
+    lg = log --graph --all --decorate --abbrev-commit --branches --date=default
+    cm = commit -m
+    fa = fetch --all
+    fo = fetch origin
+    ca = commit --amend
+    diffc = diff --cached
+[push]
+	default = matching
