@@ -17,6 +17,13 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 ```
 
+### For Mac
+```bash
+brew install rbenv ruby-build
+
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```
+
 ## Ruby
 ```bash
 rbenv install 2.3.1
@@ -24,3 +31,9 @@ rbenv rehash
 rbenv global 2.3.1
 ruby --version
 ```
+
+## Bundler
+```bash
+gem install bundler
+```
+
