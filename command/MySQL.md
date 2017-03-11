@@ -1,6 +1,16 @@
 # MySQL Note
 
-### Server
+## install
+### For Mac
+
+```vash
+brew info mysql
+brew info mysql56
+
+brew install mysql
+```
+
+## Server
 * start
 
 ```bash
@@ -18,29 +28,32 @@ mysql.server stop
 mysqld stop
 ```
 
-### Database
+## Database
 * Create DB
 
 ```sql
-create database [database_name];
+CREATE DATABASE [database_name];
 
 [check]
-show databases;
+SHOW DATABASES;
 ```
 
 * MySQL User
 
 ```sql
-grant all on develop.* to 'cobot00'@'localhost';
+CREATE USER 'cobot00'@'localhost' IDENTIFIED BY 'pswd';
 
-select host, user from mysql.user;
+GRANT ALL ON develop.* TO 'cobot00'@'localhost';
 
+SELECT host, user FROM mysql.user;
+
+SET PASSWORD FOR root@localhost=PASSWORD('pswd');
 SET PASSWORD FOR cobot00@localhost=PASSWORD('pswd');
 
 show grants;
 ```
 
-### Useful Command
+## Useful Command
 * Version check
 
 ```sql
