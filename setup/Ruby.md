@@ -24,6 +24,36 @@ brew install rbenv ruby-build
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 ```
 
+### For Windows
+
+* rubyinstaller
+https://rubyinstaller.org/downloads/
+
+* 基本セット
+
+```bash
+cd [DevKit_HOME]
+ruby dk.rb init
+ruby dk.rb install
+
+[RUBY_HOME]/lib/ruby/site_ruby/devkit.rb
+```
+
+```bash
+gem update --system
+
+gem install bundler
+gem install pg -v "~> 0.18.0"
+```
+
+* Rails
+
+```bash
+gem install rails --version="~> 5.0.0" --no-ri --no-rdoc
+
+rails new [APP_NAME] -d postgresql
+```
+
 ## Ruby
 ```bash
 rbenv install 2.3.1
