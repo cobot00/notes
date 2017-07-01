@@ -43,7 +43,7 @@ ruby dk.rb install
 gem update --system
 
 gem install bundler
-gem install pg -v "~> 0.18.0"
+gem install pg -v "~> 0.20.0"
 ```
 
 * Rails
@@ -56,9 +56,9 @@ rails new [APP_NAME] -d postgresql
 
 ## Ruby
 ```bash
-rbenv install 2.3.1
+rbenv install 2.4.1
 rbenv rehash
-rbenv global 2.3.1
+rbenv global 2.4.1
 ruby --version
 ```
 
@@ -67,3 +67,10 @@ ruby --version
 gem install bundler
 ```
 
+## Windows by RubyInstaller2
+https://github.com/oneclick/rubyinstaller2/releases
+
+インストール後に `[RUBY_HOME]/bin` へのPATHを環境変数に追加する
+
+### MSYS2
+http://qiita.com/akaneko3/items/26d758e9e84ad213697f
