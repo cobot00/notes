@@ -24,6 +24,21 @@ brew install rbenv ruby-build
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 ```
 
+```bash
+rbenv install --list
+
+rbenv install 2.4.1
+rbenv global 2.4.1
+rbenv rehash
+
+ruby -v
+```
+
+#### version up
+```bash
+brew upgrade ruby-buil
+```
+
 ### For Windows
 
 * rubyinstaller
